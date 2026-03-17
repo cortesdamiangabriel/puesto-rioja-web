@@ -1,0 +1,207 @@
+:root{
+
+--green:#007336;
+--black:#111111;
+--gray:#d9d9d9;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+color:var(--black);
+
+}
+
+/* CONTENEDOR */
+
+.container{
+
+max-width:1200px;
+margin:auto;
+padding:20px;
+
+}
+
+/* HEADER */
+
+.header{
+
+background:var(--black);
+color:white;
+
+}
+
+.nav-container{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+}
+
+.logo img{
+
+height:48px;
+
+}
+
+/* MENU */
+
+.menu{
+
+display:flex;
+gap:32px;
+list-style:none;
+
+}
+
+.menu a{
+
+color:white;
+text-decoration:none;
+font-weight:600;
+
+}
+
+/* DROPDOWN */
+
+.dropdown{
+
+position:relative;
+
+}
+
+.dropdown-menu{
+
+display:none;
+
+position:absolute;
+top:40px;
+
+background:var(--gray);
+
+border-radius:8px;
+
+list-style:none;
+
+min-width:200px;
+
+}
+
+.dropdown-menu li{
+
+padding:10px 20px;
+
+}
+
+.dropdown:hover .dropdown-menu{
+
+display:block;
+
+}
+
+/* HERO */
+
+.hero{
+
+background:var(--green);
+color:white;
+padding:120px 20px;
+text-align:center;
+
+}
+
+/* SECCIONES */
+
+.section{
+
+padding:80px 20px;
+
+}
+
+.gray{
+
+background:var(--gray);
+
+}
+
+.green{
+
+background:var(--green);
+color:white;
+
+}
+
+/* GRID */
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+
+}
+
+/* CARDS */
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+font-weight:600;
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:var(--black);
+color:white;
+text-align:center;
+padding:20px;
+
+}
+
+/* WHATSAPP */
+
+.whatsapp-float{
+
+position:fixed;
+
+right:20px;
+bottom:20px;
+
+width:60px;
+height:60px;
+
+background:#111111;
+
+border: 2px solid;
+border-color: #d9d9d9;
+
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+
+}
+
+.whatsapp-float img{
+
+width:32px;
+
+}
